@@ -4,7 +4,7 @@ public class GenreGeoFulfillmentWindow {
 	private FulfillmentWindow fulfillmentWindow;
 	private Long genreId;
 	private Long geoId;
-
+	private Money baseCost;
 	public FulfillmentWindow getFulfillmentWindow() {
 		return fulfillmentWindow;
 	}
@@ -27,6 +27,14 @@ public class GenreGeoFulfillmentWindow {
 
 	public void setGeoId(Long geoId) {
 		this.geoId = geoId;
+	}
+
+	public Money getBaseCost() {
+		return baseCost;
+	}
+
+	public void setBaseCost(Money baseCost) {
+		this.baseCost = baseCost;
 	}
 
 }
