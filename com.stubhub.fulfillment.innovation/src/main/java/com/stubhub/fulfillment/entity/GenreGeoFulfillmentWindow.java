@@ -2,9 +2,9 @@ package com.stubhub.fulfillment.entity;
 
 public class GenreGeoFulfillmentWindow {
 	private FulfillmentWindow fulfillmentWindow;
-	private Long genreId;
-	private Long geoId;
+    private GenreGeo genreGeo;
 	private Money baseCost;
+
 	public FulfillmentWindow getFulfillmentWindow() {
 		return fulfillmentWindow;
 	}
@@ -13,23 +13,15 @@ public class GenreGeoFulfillmentWindow {
 		this.fulfillmentWindow = fulfillmentWindow;
 	}
 
-	public Long getGenreId() {
-		return genreId;
-	}
+    public GenreGeo getGenreGeo() {
+        return genreGeo;
+    }
 
-	public void setGenreId(Long genreId) {
-		this.genreId = genreId;
-	}
+    public void setGenreGeo(GenreGeo genreGeo) {
+        this.genreGeo = genreGeo;
+    }
 
-	public Long getGeoId() {
-		return geoId;
-	}
-
-	public void setGeoId(Long geoId) {
-		this.geoId = geoId;
-	}
-
-	public Money getBaseCost() {
+    public Money getBaseCost() {
 		return baseCost;
 	}
 

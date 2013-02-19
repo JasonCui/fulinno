@@ -2,42 +2,32 @@ package com.stubhub.fulfillment.entity;
 
 public class FulfillmentUserGroupPermission {
 	private UserGroup allowedUserGroup;
-	private GenreGeoFulfillmentWindow genreGeoFulfillmentWindow;
-	private Long genreId;
-	private Long geoId;
+	private FulfillmentWindow fillmentWindow;
+    private GenreGeo genreGeo;
 	private Money baseCost;// override base cost
-	
-	public Long getGenreId() {
-		return genreId;
-	}
 
-	public void setGenreId(Long genreId) {
-		this.genreId = genreId;
-	}
+    public FulfillmentWindow getFillmentWindow() {
+        return fillmentWindow;
+    }
 
-	public Long getGeoId() {
-		return geoId;
-	}
+    public void setFillmentWindow(FulfillmentWindow fillmentWindow) {
+        this.fillmentWindow = fillmentWindow;
+    }
 
-	public void setGeoId(Long geoId) {
-		this.geoId = geoId;
-	}
+    public GenreGeo getGenreGeo() {
+        return genreGeo;
+    }
 
-	public UserGroup getAllowedUserGroup() {
+    public void setGenreGeo(GenreGeo genreGeo) {
+        this.genreGeo = genreGeo;
+    }
+
+    public UserGroup getAllowedUserGroup() {
 		return allowedUserGroup;
 	}
 
 	public void setAllowedUserGroup(UserGroup allowedUserGroup) {
 		this.allowedUserGroup = allowedUserGroup;
-	}
-
-	public GenreGeoFulfillmentWindow getGenreGeoFulfillmentWindow() {
-		return genreGeoFulfillmentWindow;
-	}
-
-	public void setGenreGeoFulfillmentWindow(
-			GenreGeoFulfillmentWindow genreGeoFulfillmentWindow) {
-		this.genreGeoFulfillmentWindow = genreGeoFulfillmentWindow;
 	}
 
 	public Money getBaseCost() {

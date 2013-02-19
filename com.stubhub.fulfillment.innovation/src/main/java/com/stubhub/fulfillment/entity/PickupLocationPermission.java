@@ -3,8 +3,7 @@ package com.stubhub.fulfillment.entity;
 public class PickupLocationPermission {
 	private FulfillmentWindow fulfillmentWindow;
 	private LMSLocation lmsLocation;
-	private Long genreId;
-	private Long geoId;
+    private GenreGeo genreGeo;
 	private Money baseCost;// override base cost
 	private boolean active;
 
@@ -24,23 +23,15 @@ public class PickupLocationPermission {
 		this.lmsLocation = lmsLocation;
 	}
 
-	public Long getGenreId() {
-		return genreId;
-	}
+    public GenreGeo getGenreGeo() {
+        return genreGeo;
+    }
 
-	public void setGenreId(Long genreId) {
-		this.genreId = genreId;
-	}
+    public void setGenreGeo(GenreGeo genreGeo) {
+        this.genreGeo = genreGeo;
+    }
 
-	public Long getGeoId() {
-		return geoId;
-	}
-
-	public void setGeoId(Long geoId) {
-		this.geoId = geoId;
-	}
-
-	public boolean isActive() {
+    public boolean isActive() {
 		return active;
 	}
 
